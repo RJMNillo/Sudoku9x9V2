@@ -48,7 +48,11 @@ class Sudoku9x9():
         for row in range(0, len(self.square)):
             rowmatrix = []
             for col in range(0,len(self.square[row])):
-                rowmatrix.append(len(self.availabilitylistmatrix[row][col]))
+                # If the square is empty, put in the length of the 
+                if self.square[row][col] == 0:
+                    rowmatrix.append(len(self.availabilitylistmatrix[row][col]))
+                else:
+                    rowmatrix.append(-1)
             availabilityLengths.append(rowmatrix)
         return availabilityLengths
 
