@@ -39,7 +39,6 @@ class Sudoku9x9():
     # removeNumber: Sets number in given coordinates to 0
     # ATTENTION: functions will be based on (row, col), as it is based on the for loops.
     def printSquare(self):
-        print("The current state of our square is: ")
         for row in range(0, len(self.square)):
             print(self.square[row])
     
