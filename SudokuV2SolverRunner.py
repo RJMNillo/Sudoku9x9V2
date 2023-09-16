@@ -7,3 +7,5 @@ if __name__ == "__main__":
     # The while loop will be as follows:
     # 1. check if there are empty spots 
     # 2. check if there are any blocked spots
+    oursolver.checkEmpty()
+    oursolver.checkBlocked()
